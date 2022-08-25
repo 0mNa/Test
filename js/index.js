@@ -41,7 +41,7 @@
 //6) создать пустой массив и цикл, который заполнит массив числами от 1 до 10
 
 //let arr = [];
-//for(i = 1; i <= 10; i++) {
+//for(let i = 1; i <= 10; i++) {
  // arr.push(i);
 //}
 //console.log(arr);
@@ -86,10 +86,93 @@
 //console.log(arr.sort(sortEggsInNest))
 
 //10) написать, цикл, который выведет индексы всех элементов массива с нечетными значениями
-let arr = [17, 23, 37, 45, 52, 61, 72, 83, 91, 120];
 
-for (let i = 0; i < arr.length; i++) {
-  if (arr[i] % 2 === 1) {
-    console.log(i)
-  }
+//let arr = [17, 23, 37, 45, 52, 61, 72, 83, 91, 120];
+
+//for (let i = 0; i < arr.length; i++) {
+  //if (arr[i] % 2 === 1) {
+  //  console.log(i)
+  //}
+//}
+
+//1.
+
+//function doubleChar(str) {
+ // return [...str].map(s => s.repeat(2)).join('')
+//}
+//console.log(doubleChar("String"))
+//console.log(doubleChar("Hello World"))
+//console.log(doubleChar("1234!_ "))
+
+//2.
+
+//let Name = [
+ // 'Sam',
+  //'Harris'
+//];
+//console.info(Name[0][0]+'.'+Name[1][0]);
+
+//let Name = [
+  //'Patrick',
+  //'Feeney'
+//];
+//console.info(Name[0][0]+'.'+Name[1][0]);
+
+//3.
+//let arr = ["yoda", "best", "has"]
+//let newArray = ""
+//for (let i = 0; i < arr.length; i++) {
+ // newArray += arr[i][i] || "*"
+//}
+//console.log(newArray);
+
+//4.
+
+//let array = [-2, 14, -10, 8];
+//let result = 0;
+//for (let i = 0; i < array.length; i++) {
+   //if (array[i] > 0) {
+   // result += array[i];
+  // }
+//}
+//console.log(result);
+
+//5.
+//let arr = [1, 2, 3, 4, 5];
+//arr = arr.map((el, i) => el + i +1);
+//console.log(arr);
+
+
+//6.
+//let numbs = [0, 1, 5, 6, 2, 7, 9, 10, 8, 4];
+//numbs.sort((a, b) => (a - b));
+//let missingNumber = numbs.find((el, i) => el != i) -1;
+//console.log(missingNumber);
+
+//7.
+
+//const arr = [34, 15, 88, 2]
+//const min = Math.min(...arr)
+//console.log(min)
+
+//const arr = [34, -345, -1, 100]
+//const min = Math.min(...arr)
+//console.log(min)
+
+//8.
+//let arr = [1, -2, 3, -5];
+//let newArr = arr.map((el) => el * -1)
+//console.log(newArr);
+
+//10.
+
+let vowels = ["a", "e", "i", "o", "u", "y"];
+let word = "disInterestedness";
+let count = 0;
+word = word.toLowerCase()
+
+for (let i = 0; i < word.length; i++) {
+  vowels.find((el) => el === word[i]) ? count++ : count
+
 }
+console.log(count);
